@@ -17,5 +17,10 @@ describe("Es Bisiesto", () => {
   it("El año 2100 no es bisiesto, (entonces es divisible por 100 y no por 400) ", () => {
     expect(esBisiesto(2100)).toEqual(false);
   });
-
+  it("El año 2008 no es bisiesto, (entonces es divisible de 4) ", () => {
+    expect(esBisiesto(2008)).toEqual(true);
+  });
+  it("El año 2016 no es bisiesto, (entonces es divisible de 4) ", () => {
+    expect(esBisiesto(2016)).toEqual(true);
+  });
 });
